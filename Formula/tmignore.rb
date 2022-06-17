@@ -10,7 +10,7 @@ class Tmignore < Formula
 
 	def install
 		system "make", "brew-download-release"
-		bin.install "./bin/tmignore"
+		bin.install "./bin"
 		system "cp", "./homebrew.tmignore.plist", prefix
 	end
 
