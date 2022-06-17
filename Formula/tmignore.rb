@@ -1,8 +1,8 @@
 class Tmignore < Formula
 	desc "Exclude development files from Time Machine backups"
 	homepage "https://github.com/hkloudou/tmignore"
-	url "https://github.com/hkloudou/tmignore/archive/v1.2.12.tar.gz"
-	sha256 "ec15ca10dc1f46ad96024774a118512d48f3cc7d1f0befd1147f6d3b15f4d7e0"
+	url "https://github.com/hkloudou/tmignore/archive/v1.2.13.tar.gz"
+	sha256 "3e2348a1c86701d440b8c5e3b881dcc0096b6f0b2574511c33bfd75ef47753e9"
 	head "https://github.com/hkloudou/tmignore.git"
 
 	depends_on :macos => :high_sierra
