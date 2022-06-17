@@ -12,6 +12,7 @@ class Tmignore < Formula
 		system "make", "brew-download-release"
 		bin.install "./bin/tmignore"
 		system "cp", "./homebrew.tmignore.plist", prefix
+		system "cp", "#{prefix}/homebrew.tmignore.plist", plist_path
 	end
 
 	test do
