@@ -9,7 +9,7 @@ class Tmignore < Formula
 	depends_on :xcode => :build
 
 	def install
-		system "make", "build"
+		system "make", "brew-download-release"
 		bin.install "./bin/tmignore"
 		system "cp", "./homebrew.tmignore.plist", prefix
 	end
