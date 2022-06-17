@@ -1,8 +1,8 @@
 class Tmignore < Formula
 	desc "Exclude development files from Time Machine backups"
 	homepage "https://github.com/hkloudou/tmignore"
-	url "https://github.com/hkloudou/tmignore/archive/v1.2.13.tar.gz"
-	sha256 "3e2348a1c86701d440b8c5e3b881dcc0096b6f0b2574511c33bfd75ef47753e9"
+	url "https://github.com/hkloudou/tmignore/archive/v1.2.9.tar.gz"
+	sha256 "4bf99e90ccff57eb94a87cb10d91b0e5c9207618cf2f627ed9290ad6f5670e5a"
 	head "https://github.com/hkloudou/tmignore.git"
 
 	depends_on :macos => :high_sierra
@@ -10,7 +10,7 @@ class Tmignore < Formula
 
 	def install
 		system "make", "brew-download-release"
-		bin.install "./bin"
+		bin.install "./bin/tmignore"
 		system "cp", "./homebrew.tmignore.plist", prefix
 	end
 
